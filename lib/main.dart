@@ -22,8 +22,8 @@ class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
-      body: Center(
+      backgroundColor: Colors.blueGrey[200],
+      body: const Center(
         child: SizedBox(
           width: 400,
           child: Card(
@@ -170,15 +170,15 @@ class _AnimatedProgressIndicatorState extends State<AnimatedProgressIndicator>
 
     final colorTween = TweenSequence([
       TweenSequenceItem(
-        tween: ColorTween(begin: Colors.red, end: Colors.orange),
-        weight: 1,
-      ),
-      TweenSequenceItem(
         tween: ColorTween(begin: Colors.orange, end: Colors.yellow),
         weight: 1,
       ),
       TweenSequenceItem(
         tween: ColorTween(begin: Colors.yellow, end: Colors.green),
+        weight: 1,
+      ),
+      TweenSequenceItem(
+        tween: ColorTween(begin: Colors.green, end: Colors.blue),
         weight: 1,
       ),
     ]);
